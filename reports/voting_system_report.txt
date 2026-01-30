@@ -1,0 +1,130 @@
+============================================================
+NEW VOTING SYSTEM DESIGN & ANALYSIS REPORT
+Dancing with the Stars - MCM 2026 Problem C
+============================================================
+
+1. VOTING SYSTEMS OVERVIEW
+----------------------------------------
+
+Rank-Based Method (rank)
+  Description: Each component contributes equally via ranks
+  Seasons Used: 1-2, 28-34
+
+Percentage-Based Method (percentage)
+  Description: Components combined as percentages of totals
+  Seasons Used: 3-27
+
+Weighted Percentage Method (weighted_percentage)
+  Description: Judges weighted more heavily to ensure skill recognition
+  Seasons Used: Proposed
+
+Dynamic Weight Method (dynamic_weight)
+  Description: Weights change based on score variance
+  Seasons Used: Proposed
+
+Hybrid Elimination Method (hybrid_elimination)
+  Description: Bottom 3 identified, judges vote on elimination
+  Seasons Used: Proposed
+
+Cumulative Score Method (cumulative)
+  Description: Historical performance affects current weight
+  Seasons Used: Proposed
+
+
+2. JUDGE-FAN BALANCE ANALYSIS
+----------------------------------------
+(Based on 1000 Monte Carlo simulations)
+
+rank:
+  Judge Preference Rate: 31.20%
+  Fan Preference Rate: 33.80%
+  Agreement Rate: 35.00%
+  Balance Index: 0.974
+
+percentage:
+  Judge Preference Rate: 19.80%
+  Fan Preference Rate: 47.90%
+  Agreement Rate: 32.30%
+  Balance Index: 0.719
+
+weighted_percentage:
+  Judge Preference Rate: 24.90%
+  Fan Preference Rate: 41.50%
+  Agreement Rate: 33.60%
+  Balance Index: 0.834
+
+dynamic_weight:
+  Judge Preference Rate: 29.50%
+  Fan Preference Rate: 34.80%
+  Agreement Rate: 35.70%
+  Balance Index: 0.947
+
+hybrid_elimination:
+  Judge Preference Rate: 64.80%
+  Fan Preference Rate: 3.50%
+  Agreement Rate: 31.70%
+  Balance Index: 0.387
+
+cumulative:
+  Judge Preference Rate: 19.30%
+  Fan Preference Rate: 50.20%
+  Agreement Rate: 30.50%
+  Balance Index: 0.691
+
+
+3. STABILITY ANALYSIS (UPSET PROBABILITY)
+----------------------------------------
+
+rank:
+  Upset Rate: 1.10%
+  Stability Index: 0.989
+
+percentage:
+  Upset Rate: 9.00%
+  Stability Index: 0.910
+
+weighted_percentage:
+  Upset Rate: 6.30%
+  Stability Index: 0.937
+
+dynamic_weight:
+  Upset Rate: 4.70%
+  Stability Index: 0.953
+
+hybrid_elimination:
+  Upset Rate: 0.00%
+  Stability Index: 1.000
+
+cumulative:
+  Upset Rate: 9.70%
+  Stability Index: 0.903
+
+
+4. RECOMMENDATIONS
+----------------------------------------
+
+    Based on our analysis, we recommend the following:
+    
+    FOR FAIRNESS (ensuring skilled dancers advance):
+    - Weighted Percentage Method with 60% judge weight
+    - Or Hybrid Elimination Method with bottom-3 selection
+    
+    FOR EXCITEMENT (maintaining fan engagement):
+    - Dynamic Weight Method that adjusts based on score variance
+    - This rewards skill when differences are clear,
+      but allows fan preference when performances are close
+    
+    FOR CONTROVERSY PREVENTION:
+    - Hybrid Elimination provides a safety net
+    - Prevents extremely unpopular eliminations while
+      still giving fans significant influence
+    
+    OPTIMAL COMBINATION:
+    We propose a tiered system:
+    1. Use Dynamic Weight Method for preliminary ranking
+    2. Apply Hybrid Elimination for bottom-3 decision
+    3. Consider Cumulative Method for later stages to
+       protect consistently good performers
+    
+
+============================================================

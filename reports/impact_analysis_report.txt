@@ -1,0 +1,60 @@
+============================================================
+IMPACT FACTOR ANALYSIS REPORT
+Dancing with the Stars - MCM 2026 Problem C
+============================================================
+
+1. PROFESSIONAL PARTNER IMPACT
+----------------------------------------
+ANOVA Test (Partner → Placement):
+  F-statistic: 2.1640
+  P-value: 0.0002
+  Significant at α=0.05: True
+
+Top Partners by Win Rate:
+  Witney Carson (Xoshitl Gomez week 9): 100.00%
+  Julianne Hough: 40.00%
+  Derek Hough: 35.29%
+  Jenna Johnson: 22.22%
+  Daniella Karagach: 20.00%
+
+2. AGE IMPACT
+----------------------------------------
+Age vs Placement Correlation: 0.4329
+  P-value: 0.0000
+
+Winner Age Statistics:
+  Mean: 29.6
+  Median: 29.0
+  Range: 16 - 51
+
+3. INDUSTRY IMPACT
+----------------------------------------
+Chi-square Test (Industry → Top 3):
+  Chi2: 6.3538
+  P-value: 0.3847
+  Significant at α=0.05: False
+
+Top Industries by Win Rate:
+  Conservationist: 100.00%
+  Radio Personality: 25.00%
+  Racing Driver: 25.00%
+  Social Media Personality: 12.50%
+  Athlete: 11.58%
+
+4. PREDICTIVE MODEL ANALYSIS
+----------------------------------------
+Linear Regression (Predicting Placement):
+  R² Score: 0.2010
+  Cross-validation R²: 0.1568 ± 0.0852
+  Feature Coefficients:
+    celebrity_age_during_season: 1.6334
+    industry_encoded: 0.2041
+    partner_encoded: -0.0931
+    is_us: -0.0362
+    season: 0.3755
+
+Logistic Regression (Predicting Top 3):
+  Accuracy: 0.7530
+  Cross-validation Accuracy: 0.7364 ± 0.0336
+
+============================================================
