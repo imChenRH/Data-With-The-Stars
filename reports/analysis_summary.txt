@@ -1,0 +1,47 @@
+
+    ========================================================
+    DWTS ANALYSIS SUMMARY - MCM 2026 Problem C
+    Generated: 2026-01-30 02:17:18
+    ========================================================
+    
+    DATA OVERVIEW:
+    - Total seasons analyzed: 34
+    - Total contestants: 421
+    - Time span: Seasons 1-34
+    
+    KEY FINDINGS:
+    
+    1. FAN VOTE ESTIMATION:
+       - Successfully estimated fan votes for all seasons
+       - Consistency rate varies by season (70-90%)
+       - Higher uncertainty in close competitions
+    
+    2. VOTING METHOD COMPARISON:
+       - Rank method: More stable, less susceptible to extreme votes
+       - Percentage method: Can amplify fan preferences
+       - Controversies often occur when methods would give different results
+    
+    3. IMPACT FACTORS:
+       - Professional partner has significant impact (p<0.05)
+       - Industry type affects initial scores but not final placement
+       - Age has weak negative correlation with judge scores
+       - US vs non-US shows no significant difference
+    
+    4. CONTROVERSY CASES:
+       - Jerry Rice (S2): High fan support overcame low scores
+       - Billy Ray Cyrus (S4): Similar pattern
+       - Bristol Palin (S11): Most extreme case
+       - Bobby Bones (S27): Led to rule change in S28
+    
+    5. RECOMMENDATIONS:
+       - Weighted Percentage (60% judge) for fairness
+       - Dynamic Weight method for balance
+       - Hybrid elimination for controversy prevention
+    
+    OUTPUT FILES:
+    - reports/impact_analysis_report.txt
+    - reports/voting_system_report.txt
+    - figures/ (multiple visualization files)
+    
+    ========================================================
+    
